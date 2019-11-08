@@ -1,4 +1,4 @@
-package com.lessons.collections
+package com.lessons.scala.oo.collections.seq
 
 import scala.collection.immutable.LinearSeq
 
