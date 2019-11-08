@@ -1,3 +1,5 @@
+import com.lessons.scala.oo.collections.seq.ListMatchPatternTestUnit.fruits
+
 import scala.collection.immutable.LinearSeq
 def sum(seq:LinearSeq[Int]):Int={
   var total:Int = seq.head;
@@ -7,3 +9,6 @@ def sum(seq:LinearSeq[Int]):Int={
   total
 }
 sum(LinearSeq(22,1,2,432));
+
+val fruits=List("Apple","Orange","Banana");
+val List(a,b,c) = fruits;
