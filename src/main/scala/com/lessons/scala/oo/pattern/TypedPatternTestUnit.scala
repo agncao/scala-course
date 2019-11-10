@@ -1,6 +1,7 @@
 package com.lessons.scala.oo.pattern
 
 /**
+  * 数组泛型跟java一样不会类型擦除，其他如List、Map、Set等泛型会类型擦除
   * Created by tangweiqun on 2017/12/8.
   */
 object TypedPatternTestUnit {
