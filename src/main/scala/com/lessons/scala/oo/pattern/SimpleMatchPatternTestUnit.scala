@@ -36,4 +36,4 @@ object SimpleMatchPattenTestUnit {
   }
 }
 
-case class UnOp(y:String,expr:Expr) extends Var(y)
+case class UnOp(y:String,expr:Expr) extends Expr

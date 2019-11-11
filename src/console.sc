@@ -1,9 +1,11 @@
-import com.lessons.scala.oo.clz.Var
-import com.lessons.scala.oo.pattern.UnOp
+val someNumbers = List(-11, -10, -5, 0, 5, 10)
+println(someNumbers)
+someNumbers.foreach(println _)
+val output: () => Unit = println _
+someNumbers.foreach(output.apply(_))
 
 
-val expr = UnOp("abs", UnOp("abs", Var("x")))
-expr match {
-  case UnOp("abs", e@UnOp("abs", i@Var(_))) => println(e + " " + i)
-  case _ =>
-}
+
+
+
+
