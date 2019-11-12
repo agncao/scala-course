@@ -1,11 +1,11 @@
-val someNumbers = List(-11, -10, -5, 0, 5, 10)
-println(someNumbers)
-someNumbers.foreach(println _)
-val output: () => Unit = println _
-someNumbers.foreach(output.apply(_))
+def sum(i: Int)(j: Int)(k: Int): Int ={
+  i + j + k
+}
+val result = sum _
+val r = result(2)(3)(4)
+println(r)
 
-
-
-
-
-
+val r1 = result(1)//返回一个function1
+println(r1)
+val r2 = result(2)(_: Int)(4)
+println(r2)//返回一个function1
